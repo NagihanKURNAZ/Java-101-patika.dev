@@ -1,25 +1,39 @@
 import java.util.Scanner;
 
-import javax.print.DocFlavor.INPUT_STREAM;
-
 public class Main {
 
 	public static void main(String[] args) {
-	
-	 
+		
 		Scanner input = new Scanner(System.in);
 		
-		double km, perkm = 2.20, opentaximeter = 10, totalAmount; 
+		double armut = 2.14, elma = 3.67, domates = 1.11, muz = 0.95, patlıcan = 5.00, toplamtutar;
+		int a, e, d, m, p;
 		
-		System.out.println("******* Taximetre Account *********");
-		System.out.println("How Many Kilometers Traveled? : ");
-		km = input.nextDouble();
+		System.out.println("Kaç kilo armut aldınız?");
+		a = input.nextInt();
+		System.out.println("Kaç kilo elma aldınız?");
+		e = input.nextInt();
+		System.out.println("Kaç kilo domates aldınız?");
+		d = input.nextInt();
+		System.out.println("Kaç kilo muz aldınız?");
+		m = input.nextInt();
+		System.out.println("Kaç kilo patlıcan aldınız?");
+		p = input.nextInt();
 		
-		totalAmount = opentaximeter + (km*perkm) ;
+		toplamtutar = ((a*armut) + (e*elma) + (d*domates) + (m*muz) + (p*patlıcan));
+		System.out.println("Toplam Tutar: " +toplamtutar);
 		
-		totalAmount = (totalAmount<20) ? 20 : totalAmount;
 		
-		System.out.println("Total Amount: " +totalAmount);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
